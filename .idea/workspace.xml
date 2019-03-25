@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bf84d7c-b8e8-4869-88f1-752da7bfaa52" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/NotaFileRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/NotaFileRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ro/ubb/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ro/ubb/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ro/ubb/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ro/ubb/AppTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,14 +24,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="111" />
+          <entry key="java" value="269" />
           <entry key="txt" value="32" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="111" />
+          <entry key="JAVA" value="269" />
           <entry key="PLAIN_TEXT" value="32" />
           <entry key="XML" value="2" />
         </counts>
@@ -55,8 +53,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ro/ubb/AppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+            <state relative-caret-position="355">
+              <caret line="81" column="52" selection-start-line="81" selection-start-column="52" selection-end-line="81" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -240,6 +238,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lab2final" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LabAssiAsseProjectV01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ubb" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -282,7 +288,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553526360156" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553526770172" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -317,8 +323,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AppTest.testAddStudentFail">
-    <configuration name="AppTest.testAddStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AppTest.testAddAssignment">
+    <configuration name="AppTest.testAddAssignment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LabAssiAsseProjectV01" />
       <extension name="coverage">
         <pattern>
@@ -328,7 +334,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="ro.ubb" />
       <option name="MAIN_CLASS_NAME" value="ro.ubb.AppTest" />
-      <option name="METHOD_NAME" value="testAddStudent" />
+      <option name="METHOD_NAME" value="testAddAssignment" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest.testAddAssignmentFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LabAssiAsseProjectV01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ro.ubb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ro.ubb" />
+      <option name="MAIN_CLASS_NAME" value="ro.ubb.AppTest" />
+      <option name="METHOD_NAME" value="testAddAssignmentFail" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -382,36 +404,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentRepositoryTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LabAssiAsseProjectV01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="repository" />
-      <option name="MAIN_CLASS_NAME" value="repository.StudentRepositoryTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="JUnit.AppTest.testAddStudent" />
       <item itemvalue="JUnit.AppTest.testAddStudentFail" />
-      <item itemvalue="JUnit.StudentRepositoryTest.test" />
       <item itemvalue="JUnit.AppTest.testAddStudent1" />
       <item itemvalue="JUnit.AppTest.testAddStudent2" />
+      <item itemvalue="JUnit.AppTest.testAddAssignment" />
+      <item itemvalue="JUnit.AppTest.testAddAssignmentFail" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AppTest.testAddAssignment" />
+        <item itemvalue="JUnit.AppTest.testAddAssignmentFail" />
         <item itemvalue="JUnit.AppTest.testAddStudentFail" />
         <item itemvalue="JUnit.AppTest.testAddStudent1" />
         <item itemvalue="JUnit.AppTest.testAddStudent2" />
-        <item itemvalue="JUnit.AppTest.testAddStudent" />
-        <item itemvalue="JUnit.StudentRepositoryTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -426,7 +432,7 @@
       <option name="presentableId" value="Default" />
       <updated>1553522941711</updated>
       <workItem from="1553522944934" duration="1952000" />
-      <workItem from="1553524926682" duration="1319000" />
+      <workItem from="1553524926682" duration="1687000" />
     </task>
     <task id="LOCAL-00001" summary="Hai de">
       <created>1553525195337</created>
@@ -446,9 +452,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AppTest_testAddStudent - 2019.03.25 at 16h 37m 32s.xml">
-      <configuration name="AppTest.testAddStudent" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="StudentRepositoryTest_test - 2019.03.25 at 16h 39m 01s.xml">
       <configuration name="StudentRepositoryTest.test" configurationId="JUnit" />
     </history-entry>
@@ -476,9 +479,12 @@
     <history-entry file="AppTest_testAddStudentFail - 2019.03.25 at 17h 05m 54s.xml">
       <configuration name="AppTest.testAddStudentFail" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AppTest_testAddAssignment - 2019.03.25 at 17h 12m 01s.xml">
+      <configuration name="AppTest.testAddAssignment" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3271000" />
+    <option name="totallyTimeSpent" value="3639000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -628,8 +634,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ro/ubb/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        <state relative-caret-position="355">
+          <caret line="81" column="52" selection-start-line="81" selection-start-column="52" selection-end-line="81" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -3,9 +3,13 @@ package ro.ubb;
 import static org.junit.Assert.assertTrue;
 
 import domain.Student;
+import domain.Tema;
+import jdk.nashorn.internal.ir.Assignment;
 import org.junit.Test;
 import repository.StudentXMLRepository;
+import repository.TemaXMLRepository;
 import validation.StudentValidator;
+import validation.TemaValidator;
 import validation.Validator;
 
 /**
@@ -59,5 +63,23 @@ public class AppTest
         fileRepository1.save(new Student("SSVV", "SSVV",932));
         assert (fileRepository1.findOne("SSVV")!=null);
 
+    }
+
+    @Test
+    public void testAddAssignment(){
+        Validator<Tema> TemaValidator = new TemaValidator();
+
+        TemaXMLRepository fileRepository1 = new TemaXMLRepository(TemaValidator, "teme.xml");
+        fileRepository1.save(new Tema("13", "SSVV",932,931));
+        assert (fileRepository1.findOne("13")==null);
+    }
+
+    @Test
+    public void testAddAssignmentFail(){
+        Validator<Tema> TemaValidator = new TemaValidator();
+
+        TemaXMLRepository fileRepository1 = new TemaXMLRepository(TemaValidator, "teme.xml");
+        fileRepository1.save(new Tema("13", "SSVV",6,5));
+        assert (fileRepository1.findOne("13")!=null);
     }
 }
