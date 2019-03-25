@@ -38,6 +38,26 @@ public class AppTest
 
         StudentXMLRepository fileRepository1 = new StudentXMLRepository(studentValidator, "studenti.xml");
         fileRepository1.save(new Student("666","",932));
-        assert (fileRepository1.findOne("666")!=null);
+        assert (fileRepository1.findOne("666")==null);
+    }
+
+    @Test
+    public void testAddStudent1(){
+        Validator<Student> studentValidator = new StudentValidator();
+
+        StudentXMLRepository fileRepository1 = new StudentXMLRepository(studentValidator, "studenti.xml");
+        fileRepository1.save(new Student("383",null,932));
+        assert (fileRepository1.findOne("383")==null);
+
+    }
+
+    @Test
+    public void testAddStudent2(){
+        Validator<Student> studentValidator = new StudentValidator();
+
+        StudentXMLRepository fileRepository1 = new StudentXMLRepository(studentValidator, "studenti.xml");
+        fileRepository1.save(new Student("SSVV", "SSVV",932));
+        assert (fileRepository1.findOne("SSVV")!=null);
+
     }
 }
